@@ -9,12 +9,21 @@ body {
 	font-weight: 400;
 	color: #404040;
 	background-color: #eee;
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 section {
 	width: 100%;
 	margin: 0px;
 	padding: 100px 0px 0px 0px;
+}
+footer {
+	margin: 3em 0em 0em 0em;
+	padding: 3em 0em;
+	background-color: #333;
+	color: #ddd;
+}
+footer  a {
+	color: #2980b9;
 }
 p {
 	line-height: 1.6em;
@@ -39,6 +48,21 @@ p {
 	font-size: 0.8em;
 	color: #7F7F7F;
 	margin: 0.1em 0em;
+}
+.columns-2 > div {
+	vertical-align: top;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0em 0.5em;
+	width: calc(50% - 1em);
+}
+.columns-2 > div:first-child {
+	width: calc(50% - 0.5em);
+	margin-left: 0em;
+}
+.columns-2 > div:last-child {
+	width: calc(50% - 1em);
+	margin-right: 0em;
 }
 b {
 	font-weight: 700;
@@ -89,34 +113,6 @@ img {
 	max-width: 1024px;
 	padding: 0em 0.4em;
 }
-.youtube-container {
-	width: 100%;
-	position: relative;
-	padding-bottom: 56.25%;
-	background: repeating-linear-gradient(
-	   135deg,
-	   #eaeaea,
-	   #eaeaea 5px,
-	   #ddd 5px,
-	   #ddd 10px
-	 )
-}
-.youtube-container:before {
-	content: "Video wird geladen...";
-	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-shadow: 2px 2px 0px #eaeaea, 2px -2px 0px #eaeaea, -2px -2px 0px #eaeaea, -2px 2px 0px #eaeaea;
-}
-.youtube-container iframe {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
-}
 
 /******************************************************************************
  * LOGO & NAVIGATION 
@@ -160,10 +156,6 @@ img {
 #nav a {
 	color: #666;
 	text-decoration: none;
-}
-#nav.fixed,
-#nav.menu-on {
-	
 }
 #nav li {
 	position: relative;

@@ -64,6 +64,10 @@
 	.content {
 		padding: 0em 0.8em;
 	}
+	.columns-2 > div {
+		width: 100% !important;
+		margin: 0em !important;
+	}
 	.hm {
 		display: none;
 	}
