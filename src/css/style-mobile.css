@@ -14,12 +14,17 @@
 	.hamburger {
 		display: inline-block !important;
 	}
-	#logo-top {
+	#nav.fixed #logo-top {
 		left: 50%;
 		transform: translate(-50%, -50%);
+		display: inline-block;
 	}
 	#nav {
 		font-size: 1.2em;
+	}
+	#nav:not(.fixed) {
+		background: transparent;
+		box-shadow: none;
 	}
 	#nav ul {
 		box-sizing: border-box;
@@ -29,6 +34,23 @@
 	}
 	#nav.menu-on {
 		max-height: 100%;
+		background-color: white;
+	}
+	#nav.menu-on .hamburger-inner, 
+	#nav.menu-on .hamburger-inner::before, 
+	#nav.menu-on .hamburger-inner::after ,
+	#nav.fixed .hamburger-inner, 
+	#nav.fixed .hamburger-inner::before, 
+	#nav.fixed .hamburger-inner::after {
+		background-color: #000;
+	}
+	#nav.menu-on .hamburger.is-active .hamburger-inner,
+    #nav.menu-on .hamburger.is-active .hamburger-inner::before,
+	#nav.menu-on .hamburger.is-active .hamburger-inner::after,
+	#nav.fixed .hamburger.is-active .hamburger-inner,
+    #nav.fixed .hamburger.is-active .hamburger-inner::before,
+    #nav.fixed .hamburger.is-active .hamburger-inner::after {
+		background-color: #000; 
 	}
 	
 	#nav.menu-on ul {
