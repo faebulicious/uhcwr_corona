@@ -106,6 +106,22 @@ a {
 img {
 	max-width: 100%;
 }
+table {
+	width: 100%;
+}
+th, td {
+	margin: 0;
+	padding: 0.25em 0;
+}
+thead th {
+	border-bottom: 1px solid #666;
+}
+tbody td {
+	border-bottom: 1px solid #aaa;
+}
+th {
+	text-align: left;
+}
 .content {
 	box-sizing: border-box;
 	margin: 0px auto;
@@ -135,11 +151,10 @@ img {
 #logo-top {
 	position: absolute;
 	top: 30px;
-	left: 10px;
-	transform: translate(0, -50%);
+	left: 50%;
+	transform: translate(calc(-512px + .4em), -50%);
 	height: 54px;
 	/*top: -60px;*/
-	display: none;
 }
 #logo-teaser {
 	height: 50%;
@@ -178,7 +193,7 @@ img {
 	transition: background-color .5s ease;
 }
 #nav ul {
-	padding: 0px;
+	padding: 0px 0px 0px 110px;
 	margin: 0px auto;
 	width: 1024px;
 }
