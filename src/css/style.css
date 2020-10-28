@@ -35,6 +35,9 @@ p.important {
 	padding: 0.5em;
 	border-radius: 0.5em;
 	background-color: #FDD;
+	text-align: center;
+	box-shadow: 1px 1px 10px rgba(255,0,0,.6);
+	color: #660000;
 }
 .content ul {
 	list-style: none;
