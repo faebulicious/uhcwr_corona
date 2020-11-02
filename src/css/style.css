@@ -31,6 +31,7 @@ p {
 	display: block;
 }
 p.important {
+	opacity: 1 !important;
 	border: 1px solid #DD0000;
 	padding: 0.5em;
 	border-radius: 0.5em;
@@ -330,4 +331,37 @@ a.button:before {
 }
 .c {
 	text-align: center;
+}
+#table-masks {
+	border-spacing: 0px;
+}
+#table-masks th, 
+#table-masks td {
+	text-align: center;
+	width: 25%;
+	border-right: 1px solid #aaa;
+}
+#table-masks th:first-child,
+#table-masks td:first-child {
+	text-align: left;
+	border-right: 1px solid #666;
+}
+#table-masks th:last-child,
+#table-masks td:last-child {
+	border-right: none;
+}
+#table-masks .critical {
+	background-color: #ff9999;
+}
+#table-masks .warning {
+	background-color: #FFFF99;
+}
+#table-masks .ok {
+	background-color: #99FF99;
+}
+.void .content > * {
+	opacity: 0.2;
+}
+.st {
+	text-decoration: line-through;
 }
