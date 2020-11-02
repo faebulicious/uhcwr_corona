@@ -361,7 +361,10 @@ a.button:before {
 }
 .void .content > * {
 	opacity: 0.2;
+<<<<<<< HEAD
 }
 .st {
 	text-decoration: line-through;
+=======
+>>>>>>> d0de4af8e77340c8c71acb9cae655c2fb54f24fd
 }
